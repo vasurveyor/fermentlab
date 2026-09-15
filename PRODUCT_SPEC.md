@@ -3,11 +3,12 @@
 FermentLab is a mobile-first workspace for home mead, cider, and wine makers. It replaces scattered notes and calculators with one reliable path from recipe idea to fermentation record.
 
 ## V1 outcomes
-- Build and save recipes with volume, style, ingredients, gravity contribution, and target FG.
+- Build and save recipes with Primary, Secondary, and Finish additions, including fermentable sugar percentage and gravity contribution.
 - Calculate OG, ABV, and honey additions deterministically in code.
 - Scale recipes and switch displays between US and metric units.
 - Log gravity, temperature, additions, and notes against a batch.
 - Ask an AI Brewer questions using open recipe and batch context. AI explains and suggests; it never owns brewing math.
+- Estimate an ABV range and active-fermentation window from OG, target FG uncertainty, yeast tolerance, and gravity load.
 
 ## Primary flow
 Open Recipe Builder → enter fermentables and targets → review live numbers → save recipe → log a batch → ask for contextual guidance.
