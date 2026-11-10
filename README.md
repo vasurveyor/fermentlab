@@ -56,3 +56,7 @@ Likely next steps include richer batch tracking, exportable recipe cards, shared
 ## Technology
 
 FermentLab uses React, TypeScript, Next.js-compatible Vinext, Tailwind CSS, and Cloudflare Workers tooling.
+
+## Hosting on GitHub Pages
+
+The app is client-only, so `npm run build:pages` makes a static copy in `dist-pages/` (config in `vite.pages.config.ts`, entry in `static/`). The `Deploy to GitHub Pages` workflow publishes it on every push to `main`. In the repo, set Settings > Pages > Source to "GitHub Actions".
