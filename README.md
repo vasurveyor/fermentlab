@@ -11,6 +11,9 @@ FermentLab is a mobile-first workspace for designing, calculating, saving, and t
 - Scale recipes and switch between US and metric units
 - Choose from detailed yeast profiles with tolerance, temperature, use, and nutrient guidance
 - Add, remove, and save custom ingredients
+- Measure in lb, oz, gal, qt, pt, cup, tbsp, and tsp (US) or kg, g, L, and mL (metric); the unit lists follow the US / Metric toggle
+- Keep your own ingredient and yeast library in the Library tab, with a PPG and sugar sanity check on every entry
+- Pick a saved recipe from the recipe name field to load it
 - Save recipes and batch logs in the browser with `localStorage`
 - Give the AI Brewer read-only recipe and batch context while keeping brewing math deterministic
 - Use a responsive interface designed for phones first
@@ -53,3 +56,7 @@ Likely next steps include richer batch tracking, exportable recipe cards, shared
 ## Technology
 
 FermentLab uses React, TypeScript, Next.js-compatible Vinext, Tailwind CSS, and Cloudflare Workers tooling.
+
+## Hosting on GitHub Pages
+
+The app is client-only, so `npm run build:pages` makes a static copy in `dist-pages/` (config in `vite.pages.config.ts`, entry in `static/`). The `Deploy to GitHub Pages` workflow publishes it on every push to `main`. In the repo, set Settings > Pages > Source to "GitHub Actions".
